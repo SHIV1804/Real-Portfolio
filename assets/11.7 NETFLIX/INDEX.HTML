@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NETFLIX</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat&family=Dancing+Script&family=Edu+SA+Beginner:wght@500&family=Josefin+Sans&family=Kanit:wght@300&family=Libre+Baskerville&family=Lumanosimo&family=Noto+Serif+Display:ital,wght@0,400;1,500;1,600&family=Poppins:wght@300&family=Qwitcher+Grypen:wght@700&family=Raleway:wght@300&family=Ubuntu:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Anton&family=Bebas+Neue&family=Caveat&family=Dancing+Script&family=Edu+SA+Beginner:wght@500&family=Josefin+Sans&family=Kanit:wght@300&family=Libre+Baskerville&family=Lumanosimo&family=Noto+Serif+Display:ital,wght@0,400;1,500;1,600&family=Poppins:wght@100;300&family=Qwitcher+Grypen:wght@700&family=Raleway:wght@300&family=Roboto:wght@300&family=Rubik&family=Ubuntu:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Josefin+Sans&family=Kanit:wght@300&family=Poppins:wght@100;300&family=Quicksand&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .frequentlyQuetion {
+            padding-top: 50px;
+            text-align: center;
+            font-family: 'Anton', sans-serif;
+            font-family: 'Josefin Sans', sans-serif;
+            font-family: 'Kanit', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Ubuntu', sans-serif;
+            border-bottom: 8px solid rgb(30, 27, 27);
+            padding-bottom: 5%;
+        }
+
+        .frequentlyQuetion h2 {
+            font-size: 3rem;
+            padding-bottom: 40px;
+        }
+
+        .accordion {
+
+            background-color: #2a2a2afa;
+            color: #ffffff;
+            cursor: pointer;
+            padding: 18px;
+            width: 80%;
+            border: none;
+            text-align: left;
+            /* outline: none; */
+            font-size: 25px;
+            transition: 0.4s;
+        }
+
+        .active,
+        .accordion:hover {
+            background-color: #514f4ffa;
+        }
+
+        .accordion:after {
+            content: '\002B';
+            color: #777;
+            font-weight: bolder;
+            font-size: 35px;
+            float: right;
+            margin-left: 0px;
+        }
+
+        .active:after {
+            content: "\00D7";
+        }
+
+        .panel {
+            margin: auto;
+            text-align: left;
+            font-size: 25px;
+            width: 77.6%;
+            padding: 0px 18px;
+            background-color: #2a2a2afa;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            margin-bottom: 5px;
+            margin-top: 2px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./assets/Main background.jpg" alt="main background" id="mainbg">
+    <div class="container">
+
+        <div class="navbar">
+            <img src="./assets/Netflix logo.png" alt="Netflix logo" id="netflixLogo">
+            <div class="sideNav">
+                <nav style="display: inline; border: rgba(157, 157, 157, 0.495) 1px solid;
+                border-radius:5px ;padding-left: 9px;padding-top: 8px;padding-bottom:9px;">
+                <img src="./globe2.svg" alt="globe" style="filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(100deg) brightness(105%) contrast(102%);">
+                <select name="lang" id="lang">
+                    <option value="eng" >English</option>
+                </select>
+            </nav>
+                <button class="signIn">Sign in</button>
+            </div>
+        </div>
+        <div class="mainText">
+            <h1>Enjoy big movies, hit series and more from ₹ 149.</h1>
+            <p class="paragraph1">Join today. Cancel anytime.</p>
+            <p class="paragraph2">Ready to watch? Enter your email to create or restart your membership.</p>
+            <div id="email">
+                <input type="email" name="email" id="mail" placeholder="Email address" >
+                <a href="https://mail.google.com/mail/u/0/" class="getStarted"><button>Get Started ></button></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="sub-container1" >
+        <img src="./assets/tv.png" alt="tv img" id="tvImg" >
+        <video id="tvVideo" autoplay playsinline muted loop><source src="./assets/video-tv-in-0819.m4v"></video>
+        <div class="sub-text1">
+            <h2>Enjoy on your TV</h2>
+            <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+        </div>
+    </div>
+    <div class="sub-container2">
+        <div class="sub1-sub-container">
+            <div class="sub2-sub-container">
+
+            <img src="./assets/boxshot.png" alt="ima of box shot" id="boxshot">
+            <p>Stranger Things <br>
+                <span id="download" style="color: rgb(29, 147, 237); font-size:15px;">Downloading...</span></p>
+            </div>
+            <img src="./assets/mobile-0819.jpg" alt="phone img" id="phoneImg">
+        </div>
+        <div class="sub-text2">
+            <h2>Download your shows to watch offline</h2>
+            <p>Save your favourites easily and always have something to watch.</p>
+        </div>
+    </div>
+    <div class="sub-container1">
+        <img src="./assets/macOS.png" alt="monitor" id="tvImg">
+        <video id="monitorVideo" autoplay playsinline muted loop><source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v" type="video/mp4"></video>
+        <div class="sub-text1">
+            <h2>Watch everywhere</h2>
+            <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+        </div>
+    </div>
+    <div class="sub-container2">
+        <img src="./assets/kid.png" alt="Kid Img" id="kidImg">
+        <div class="sub-text2">
+            <h2>Create profiles for kids</h2>
+            <p>Send children on adventures with their favourite characters in a space made just for them—free with your
+                membership.</p>
+        </div>
+    </div>
+    <div class="frequentlyQuetion">
+        <h2>Frequently Asked Questions</h2>
+        <button class="accordion">What is Netflix ?</button>
+        <div class="panel">
+            <p><br>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime,
+                documentaries and more – on thousands of internet-connected devices.
+                <br>
+                <br>
+                You can watch as much as you want, whenever you want, without a single ad – all for one low monthly
+                price. There's always something new to discover, and new TV shows and movies are added every week!
+            </p>
+            <br>
+        </div>
+
+        <button class="accordion">How much does Netflix cost ?</button>
+        <div class="panel">
+            <p><br>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed
+                monthly fee. Plans range from ₹ 149 to ₹ 649 a month. No extra costs, no contracts. <br><br></p>
+        </div>
+
+        <button class="accordion">Where can I watch ?</button>
+        <div class="panel">
+            <p><br>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at
+                netflix.com from your personal computer or on any internet-connected device that offers the Netflix app,
+                including smart TVs, smartphones, tablets, streaming media players and game consoles.
+                <br>
+                You can also download your favourite shows with the iOS, Android, or Windows 10 app. Use downloads to
+                watch while you're on the go and without an internet connection. Take Netflix with you anywhere.<br><br>
+            </p>
+
+        </div>
+
+        <button class="accordion">How do I cancle ?</button>
+        <div class="panel">
+            <p><br> Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your
+                account online in two clicks. There are no cancellation fees – start or stop your account anytime.
+                <br><br></p>
+        </div>
+
+        <button class="accordion">What can I watch on Netflix ?</button>
+        <div class="panel">
+            <p><br>
+                Netflix has an extensive library of feature films, documentaries, TV shows, anime, award-winning Netflix
+                originals, and more. Watch as much as you want, anytime you want. <br></p>
+            <br>
+        </div>
+
+        <button class="accordion">Is Netflix good for kids ?</button>
+        <div class="panel">
+            <p><br>The Netflix Kids experience is included in your membership to give parents control while kids enjoy
+                family-friendly TV shows and films in their own space.
+                <br>
+                Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating of
+                content kids can watch and block specific titles you don’t want kids to see.
+                <br><br>
+            </p>
+        </div>
+
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+
+
+
+
+
+        <p class="paragraph3">Ready to watch? Enter your email to create or restart your membership.</p>
+        <div id="email" class="bottomMail">
+            <input type="email" name="email" id="mail" placeholder="Email address" style="background-color: rgb(22, 22, 22);">
+            <a href="https://mail.google.com/mail/u/0/" class="getStarted"><button>Get Started ></button></a>
+        </div>
+    </div>
+    <p style="padding-left: 207px;padding-top: 50px;">Questions? Call <a href="">000-800-919-1694</a></p>
+    <div class="footer">
+        
+        <div class="section">
+            <a href="https://help.netflix.com/en/node/412">FAQ's</a>
+            <a href="https://media.netflix.com/en/">Media center</a>
+            <a href="https://devices.netflix.com/en/">Ways to watch</a>
+            <a href="">Cookie Preferences</a>
+            <a href="">Speed Test</a>
+        </div>
+        <div class="section">
+            <a href="">Help Centre</a>
+            <a href="">Investor Relations</a>
+            <a href="">Terms of Use</a>
+            <a href="">Corporate Information</a>
+            <a href="">Legal Notices</a>
+        </div>
+        <div class="section">
+            <a href="">Account</a>
+            <a href="">Jobs</a>
+            <a href="">Privacy</a>
+            <a href="">Contact Us</a>
+            <a href="">Only on Netflix</a>
+
+        </div>
+        
+    </div>
+    <div class="sideNAV" id="bottomNav">
+        <img src="./globe2.svg" alt="globe img" style="filter: invert(100%) sepia(100%) saturate(1%) hue-rotate(100deg) brightness(105%) contrast(102%); height: 16px;width: 16px;">
+        <select name="lang" id="Lang">
+            <option value="eng">English</option>
+        </select>
+    </div>
+    <footer style="padding-left:207px ; padding-top: 20px;padding-bottom: 60px;font-size: 15px; font-family: 'Ubuntu', sans-serif;">Netflix India</footer> 
+</body>
+
+</html>

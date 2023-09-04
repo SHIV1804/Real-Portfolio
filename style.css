@@ -1,0 +1,246 @@
+
+*{
+    margin:0px;
+    padding: 0px;
+}
+.top-box{
+    
+    color: black;
+    font-size: 3rem;
+    height: 100vh;
+    
+    text-align: center;
+
+    position: relative;
+    
+
+}
+
+#texture{
+    position: absolute;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    opacity: 0.3;
+}
+#name{
+    
+    font-family: 'Bebas Neue', sans-serif;
+font-family: 'Caveat', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Edu SA Beginner', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Kanit', sans-serif;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Lumanosimo', cursive;
+font-family: 'Noto Serif Display', serif;
+font-family: 'Raleway', sans-serif;
+    padding-bottom: 15%;
+    padding-top: 10%;
+
+}
+#title{
+    font-family: sans-serif;
+   
+    
+    text-transform: uppercase;
+}
+.circle{
+    width: 340px;
+    height: 340px;
+    background-color: #717c7d9d;
+    border-radius:50% ;
+    
+    position: absolute;
+    z-index: -1;
+   left:38.3%;
+   top: 50.3%;
+   
+}
+
+.heading p{
+    margin: 0px;
+    font-size:medium;
+}
+.navbar{
+    
+    
+    float: right;
+    padding-right: 5px;
+    
+}
+#gmail{
+    
+    background-color: rgba(135, 139, 139, 0.134);
+    border: rgb(255, 255, 255);
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 3px;
+}
+.Login{
+    background-color: rgb(0, 0, 0);
+    
+    color: aliceblue;
+    padding: 3px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+.Sign{
+     background-color: rgb(255, 255, 255);
+     border: white;
+    color: rgb(0, 0, 0);
+    padding: 3px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.middle-box{
+    color: black;
+    
+    height: 70vh;
+    
+    text-align: center;
+    margin-top: 7rem;
+    
+}
+
+.middle-box>h2{
+
+    font-size: 3rem;
+    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'Caveat', cursive;
+    font-family: 'Dancing Script', cursive;
+font-family: 'Edu SA Beginner', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Kanit', sans-serif;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Lumanosimo', cursive;
+font-family: 'Noto Serif Display', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-weight:900;
+color: #141c3a;
+padding-bottom: 20px;
+}
+.middle-box P{
+    
+    font-family: 'Bebas Neue', sans-serif;
+font-family: 'Caveat', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Edu SA Beginner', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Kanit', sans-serif;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Lumanosimo', cursive;
+font-family: 'Noto Serif Display', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-size: larger;
+}
+
+.bottom-box{
+    height: 100%;
+    margin: 5%;
+   
+}
+.bottom-box h2{
+    text-transform: uppercase;
+    font-family: sans-serif;
+    letter-spacing: 6px;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+#tindog-img{
+    width: 30%;
+    border-radius: 5%;
+    margin-top:5% ;
+    float: left;
+    margin-right: 3%;
+    
+}
+.text-tindog{
+   
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 100px;
+}
+.text-tindog button{
+    background-color: #2f3434a7;
+    color: rgb(0, 0, 0);
+    border: 0;
+    padding: 5px;
+    font-size: large;
+    letter-spacing: 2px;
+    border-radius: 4px;
+}
+
+#Netflix-img{
+    width: 30%;
+    border-radius: 5%;
+    margin-top:5% ;
+    float: right;
+    margin-right: 3%;
+    margin-left: 3%;
+}
+#Netflix-box{
+    padding-top: 12%;
+   
+}
+.footer{
+    
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.footer small{
+    float: left;
+    margin-right: 80%;
+}
+.footer svg{
+    padding-left:10px ;
+    padding-right: 10px;
+}
+
+
+@media(max-width:1024px){
+    
+
+    .circle{
+        width: 240px ;
+        height: 240px;
+    }
+
+
+}
+@media(max-width:768px){
+    
+    .top-box{
+        font-size:2rem ;
+    }
+    #name{
+        padding-top: 230px;
+    }
+    .circle{
+        left:35% ;
+    }
+
+
+}
+@media(max-width:427px){
+    .top-box{
+        font-size:1.4rem ;
+    }
+    #name{
+        padding-top: 230px;
+    }
+    .circle{
+        left:32% ;
+        width: 140px;
+        height: 140px;
+    }
+}
